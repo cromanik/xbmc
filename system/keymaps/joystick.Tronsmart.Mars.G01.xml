@@ -523,8 +523,8 @@ axis IDs:
       <button id="6">Back</button>
     </joystick>
   </PictureInfo>
-  <MyPictures>
 <!-- added entire section -->
+  <MyPictures>
     <joystick name="Gamepad For Windows (Controller)">
       <altname>Tronsmart</altname>
       <button id="10">XBMC.ActivateWindow(Favourites)</button>
