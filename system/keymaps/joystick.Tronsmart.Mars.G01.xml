@@ -2,7 +2,7 @@
 
 <!--
 joystick.Tronsmart.Mars.G01.xml
-2015/12/13 Tom Wizetek <tom@wizetek.com>
+2016/01/09 Tom Wizetek <tom@wizetek.com>
 based on joystick.xml.sample plus enhancements
 
 ** Of the three Tronsmart X/D/A modes use the X mode. **
@@ -12,13 +12,13 @@ B = back, stop, open Favourites on home screen
 X = context menu, OSD while playing
 Y = toggle full screen, picture zoom reset
 
-Left Shoulder = change video aspect ratio, previous visualisation preset, queue item, delete from playlist, rotate picture
-Right Shoulder = toggle subtitles, next visualisation preset, toggle playlist, picture info
+Left Shoulder = change video aspect ratio, previous visualisation preset, rewind on Video OSD screen, queue item, delete from playlist, rotate picture
+Right Shoulder = toggle subtitles, next visualisation preset, fast forward on Video OSD screen, toggle playlist, picture info
 Left Trigger = audio offset
 Right Trigger = subtitle offset
 
-Start = display info while playing, go to home screen, ENTER, move item up (playlist/favorite), reload keymap on home screen
-Select = back, show time during video play, open visualisation presets, move item down
+Start = display info while playing, skip next on Video OSD screen, go to home screen, ENTER, move item up (playlist/favorite), reload keymap on home screen
+Select = back, show time during video play, skip previous on Video OSD screen, open visualisation presets, move item down
 
 D-pad = movement, video skip small step (left/right) or big step (up/down), audio step back/forward (left/right) or skip next/previous (up/down), picture zoom (up/down) or skip (left/right)
 
@@ -62,10 +62,10 @@ axis IDs:
       <button id="9">ActivateWindow(ShutdownMenu)</button>
 <!-- remap -->
       <!-- <button id="10">ActivateWindow(PlayerControls)</button> -->
-      <button id="10">Mute</button>
+      <!-- <button id="10">Mute</button> -->
 <!-- alternative -->
       <!-- <button id="10">Screenshot</button> -->
-      <!-- <button id="10">togglefullscreen</button> -->
+      <button id="10">togglefullscreen</button>
 <!-- nonexistent buttons beyond 10 -->
       <!-- <button id="11">Up</button> -->
       <!-- <button id="12">Down</button> -->
@@ -333,6 +333,12 @@ axis IDs:
     <joystick name="Gamepad For Windows (Controller)">
       <altname>Tronsmart</altname>
       <button id="3">Close</button>
+<!-- added -->
+      <button id="5">Rewind</button>
+      <button id="6">FastForward</button>
+<!-- added -->
+      <button id="7">SkipPrevious</button>
+      <button id="8">SkipNext</button>
     </joystick>
   </VideoOSD>
   <VideoMenu>
